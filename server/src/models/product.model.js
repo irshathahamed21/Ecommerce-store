@@ -4,7 +4,7 @@ const reqArray = {type:Array, required:true}
 const reqString = {type:String, required:true}
 const reqNumber = {type:Number, required:true}
 
-const productSchema = Schema({
+const productSchema = new Schema({
     name:reqString,
     img:reqArray,
     description:reqString,

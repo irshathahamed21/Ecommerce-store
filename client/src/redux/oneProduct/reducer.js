@@ -1,4 +1,4 @@
-import { GET_ONE_DATA_ERROR, GET_ONE_DATA_LOADING, GET_ONE_DATA_ERROR, GET_ONE_DATA_SUCCESS } from "./actionTypes";
+import { GET_ONE_DATA_ERROR, GET_ONE_DATA_LOADING,GET_ONE_DATA_SUCCESS } from "./actionTypes";
 
 
 const initState = {

@@ -1,18 +1,20 @@
-import { GET_DATA_ERROR , GET_DATA_SUCCESS, GET_DATA_ERROR, SET_CATEGORY,SET_GENDER,SET_GRID,SET_PAGE,SET_SORT, RESET_FILTER, GET_DATA_LOADING} from "./actionTypes";
+import { GET_DATA_ERROR,GET_DATA_SUCCESS, SET_CATEGORY,SET_GENDER,SET_GRID,SET_PAGE,SET_SORT, RESET_FILTER, GET_DATA_LOADING} from "./actionTypes";
 import axios from "axios"
+import { setItem } from "../../utils/sessionStorage";
+import { notify } from "../../utils/extrafunctions";
 
 
 export const getDataLoading = () => {
     return {type:GET_DATA_LOADING}
 }
 
-export const getDataSuccess = () => {
+export const getDataSuccess = (payload) => {
     return {type:GET_DATA_SUCCESS, payload}
 
 }
 
 export const getDataError = () => {
-    return {type:GET_DATA_LOADING}
+    return {type:GET_DATA_ERROR}
 
 }
 
@@ -37,7 +39,7 @@ export const setPage = (payload) => {
 }
 
 export const setGrid = (payload) => {
-    return {type:SET_PAGE, payload}
+    return {type:SET_GRID, payload}
 
 }
 
@@ -66,7 +68,7 @@ export const getAllDataRequest = (page, setLimit, size, isGender, category, isSo
         }
         
     }
-    catch(error){
+    catch(err){
         console.log(err.response.data);
         dispatch(getDataError())
     }

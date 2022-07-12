@@ -1,6 +1,5 @@
-
-import { getItemFromLocal } from "../../utils/localStorage";
 import { GET_TOKEN_SUCCESS, REMOVE_TOKEN_SUCCESS } from "./actionTypes";
+import { getItemFromLocal } from "../../utils/localStorage";
 
 
 

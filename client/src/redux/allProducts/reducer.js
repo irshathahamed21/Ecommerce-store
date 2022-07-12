@@ -1,5 +1,5 @@
 import { getItem } from "../../utils/sessionStorage";
-import { GET_DATA_ERROR , GET_DATA_SUCCESS, GET_DATA_ERROR, SET_CATEGORY,SET_GENDER,SET_GRID,SET_PAGE,SET_SORT, RESET_FILTER, GET_DATA_LOADING} from "./actionTypes";
+import { GET_DATA_ERROR, GET_DATA_SUCCESS, SET_CATEGORY,SET_GENDER,SET_GRID,SET_PAGE,SET_SORT, RESET_FILTER, GET_DATA_LOADING} from "./actionTypes";
 
 
 const initState = {

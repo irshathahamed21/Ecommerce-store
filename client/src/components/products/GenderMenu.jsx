@@ -1,5 +1,5 @@
 import React from 'react'
-import {Menu, MenuButton, MenuList,MenuItem} from "@chakra-ui/react"
+import {Menu, MenuButton, MenuList,MenuItem, Button} from "@chakra-ui/react"
 import {useDispatch} from "react-redux"
 import { BsFillCaretDownFill } from "react-icons/bs";
 import { setGender } from '../../redux/allProducts/actions';

@@ -1,8 +1,8 @@
 import React from 'react'
-import {Menu, MenuButton, MenuList,MenuItem} from "@chakra-ui/react"
+import {Menu, MenuButton, MenuList,MenuItem, Button} from "@chakra-ui/react"
 import {useDispatch} from "react-redux"
 import { BsFillCaretDownFill } from "react-icons/bs";
-import { setGender } from '../../redux/allProducts/actions';
+import { setGender, setSort } from '../../redux/allProducts/actions';
 
 const SortMenu = () => {
     const dispatch = useDispatch()
@@ -13,7 +13,7 @@ const SortMenu = () => {
   return (
     <Menu>
   <MenuButton as={Button} rightIcon={<BsFillCaretDownFill />}>
-    Gender
+    Sort
   </MenuButton>
   <MenuList>
     <MenuItem onClick = {handleSortChange} value = {"priceLH"}>Price: Low - High</MenuItem>

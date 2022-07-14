@@ -1,4 +1,4 @@
-import { Button, Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/react";
+import { Button, Menu, MenuButton, MenuItem, MenuList} from "@chakra-ui/react";
 import { BsFillCaretDownFill } from "react-icons/bs";
 import { useDispatch } from "react-redux";
 import { gridSize } from "../../utils/extrafunctions";

@@ -9,7 +9,7 @@ const ProductBox = ({data}) => {
 
   return (
     <>
-    <Link >
+    <Link to = "/">
         <Flex flexDirection={"column"} boxShadow= "sm" >
           <Box>
             <Image src = {img[0]}/>
